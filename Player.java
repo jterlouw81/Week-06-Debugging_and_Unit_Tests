@@ -35,6 +35,13 @@ public class Player {
 		score = 0;
 	}
 	
+	public void describe() {
+		System.out.printf("Player %s has the following cards: \n", name);
+		for(Card card : hand) {
+			card.describe();
+		}
+	}
+	
 	public void draw(Deck deck) {
 		hand.add(deck.draw());
 	}

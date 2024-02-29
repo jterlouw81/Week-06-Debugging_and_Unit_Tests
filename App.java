@@ -27,16 +27,28 @@ public class App {
 				player2.draw(deck);
 			}
 		}
+		
+		player1.describe();
+		player2.describe();
+		
 	//step 4.	
 		for (int i = 0; i < 26; i++) {
 			Card player1Card = player1.flipCard();
 			Card player2Card = player2.flipCard();
 			if (player1Card.getValue() > player2Card.getValue()) {
 				player1.incrementScore();
+				System.out.println("Player1 gets a point.");
 			}else if
 				(player1Card.getValue() < player2Card.getValue()) {
 				player2.incrementScore();
+				System.out.println("Player2 gets a point.");
+			}else {
+				System.out.println("It's a tie, no points awarded.");
 			}
+			System.out.println("Score: ");
+			System.out.println("Player1: " + player1.getScore());
+			System.out.println("Player2: " + player2.getScore());
+			System.out.println();
 		}
 	//	step 5 & 6
 		 System.out.printf("Player1 score = %d\n", player1.getScore());
