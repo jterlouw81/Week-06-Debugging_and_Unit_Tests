@@ -1,4 +1,4 @@
-package codingProjectWeek06;
+package gameOfWar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +36,7 @@ public class Player {
 	}
 	
 	public void describe() {
-		System.out.printf("Player %s has the following cards: \n", name);
+		System.out.printf("\nPlayer %s has the following cards: \n", name);
 		for(Card card : hand) {
 			card.describe();
 		}

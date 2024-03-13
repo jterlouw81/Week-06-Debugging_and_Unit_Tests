@@ -1,4 +1,4 @@
-package codingProjectWeek06;
+package gameOfWar;
 
 /*
  * 1. Create the Card class
@@ -65,7 +65,7 @@ public class Card {
 
 	//Describe method for printing name of cards	
 		public void describe() {
-			System.out.printf("Card: %s with value of %d\n", name, value);
+			System.out.println(name + ", " + value);
 			}
 		
 		public int getValue() {
@@ -84,4 +84,3 @@ public class Card {
 			this.name = name;
 		}
 	}
-

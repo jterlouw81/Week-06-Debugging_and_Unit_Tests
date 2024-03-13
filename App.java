@@ -1,4 +1,4 @@
-package codingProjectWeek06;
+package gameOfWar;
 
 public class App {
 
@@ -35,15 +35,22 @@ public class App {
 		for (int i = 0; i < 26; i++) {
 			Card player1Card = player1.flipCard();
 			Card player2Card = player2.flipCard();
+			
+			System.out.println("\nCard Flipped By Each Player");
+			System.out.print("\nPlayer 1's Card: ");
+			player1Card.describe();    //Shows the full name and value of player 1's card
+			System.out.print("Player 2's Card: ");
+			player2Card.describe();    //Shows the full name and value of player 2's card	
+			
 			if (player1Card.getValue() > player2Card.getValue()) {
 				player1.incrementScore();
-				System.out.println("Player1 gets a point.");
+				System.out.println("\nPlayer1 gets a point.");
 			}else if
 				(player1Card.getValue() < player2Card.getValue()) {
 				player2.incrementScore();
-				System.out.println("Player2 gets a point.");
+				System.out.println("\nPlayer2 gets a point.");
 			}else {
-				System.out.println("It's a tie, no points awarded.");
+				System.out.println("\nIt's a tie, no points awarded.");
 			}
 			System.out.println("Score: ");
 			System.out.println("Player1: " + player1.getScore());
@@ -62,3 +69,4 @@ public class App {
 	        }
 		}   
 }
+

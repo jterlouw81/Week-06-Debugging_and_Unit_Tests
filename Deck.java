@@ -1,4 +1,4 @@
-package codingProjectWeek06;
+package gameOfWar;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -43,4 +43,3 @@ public class Deck {
 		}
 	
 	}	
-
